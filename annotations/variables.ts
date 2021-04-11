@@ -19,11 +19,11 @@ let numbersArr: number[] = [ 1, 2, 3 ];
 let booleans: boolean[] = [ true, true, false ];
 
 // Classes
-class Car {
+class Car1 {
 
 }
 
-let car: Car = new Car();
+let car: Car1 = new Car1();
 
 // Object Literal
 let point: { x: number; y: number; } = {

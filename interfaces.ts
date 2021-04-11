@@ -12,7 +12,6 @@ interface IDrink extends IReportable {
   color: string;
   carbonated: boolean;
   sugar: number;
-  summary (): string;
 };
 
 const oldCivic = {
@@ -61,3 +60,10 @@ const printDrink = ( drink: IDrink ): void => {
 };
 
 printDrink( drink2 );
+
+const printSummary = ( summary: IReportable ): void => {
+  console.log( summary.summary() );
+};
+
+printSummary( drink2 );
+printSummary( oldCivic );
