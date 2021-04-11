@@ -34,9 +34,12 @@ const forecast = {
   weather: 'sunny',
 };
 
+// here is an example of how to destructure an object inside of a function in TS,
+// notice how we deconstruct date & weather in the arg. Then we can just use as such
 const logWeather = ( { date, weather }: { date: Date, weather: string; } ): void => {
   console.log( date );
   console.log( weather );
 };
 
 logWeather( forecast );
+
