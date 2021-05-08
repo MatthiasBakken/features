@@ -64,6 +64,8 @@ interface Printable {
 // indeed have a print function. Otherwise it would give an error
 function printHousesOrCars<T extends Printable> ( arr: T[] ): void {
   for ( let i = 0; i < arr.length; i++ ) {
-    arr[i]
-  }
-}
+    arr[ i ].print();
+  };
+};
+
+printHousesOrCars<House>( [ new House(), new House() ] );
